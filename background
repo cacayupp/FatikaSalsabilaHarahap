@@ -1,90 +1,37 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Fatika Salsabila Harahap</title>
+    <title>Website dengan Background Cream</title>
     <style>
         body {
+            background-color: #FFFDD0; /* Warna cream */
             font-family: Arial, sans-serif;
-            background-color: #F5F5DC; /* Warna cream */
-            color: black;
             text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            background-color: #BDAE82;
-            padding: 15px;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-            font-size: 18px;
+            padding: 50px;
         }
         .container {
-            padding: 20px;
-            background-color: #E5D3B3;
-            margin: 20px;
-            border-radius: 10px;
-        }
-        .popup {
-            display: flex;
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-            opacity: 1;
-            visibility: visible;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        .popup-content {
+            max-width: 600px;
+            margin: auto;
             background: white;
-            color: black;
             padding: 20px;
             border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .btn {
-            background: #7B61FF;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
+        h1 {
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About Me</a>
-        <a href="#">Contact Us</a>
-    </div>
     <div class="container">
-        <h2>Selamat Datang di Website Perpustakaan Fatika Salsabila Harahap</h2>
+        <h1>Selamat Datang di Website Saya</h1>
+        <p>Website ini memiliki background berwarna cream.</p>
     </div>
-    <div class="popup" id="popup">
-        <div class="popup-content">
-            <h2>Halooo!</h2>
-            <p>Selamat datang di Perpustakaan Fatika Salsabila Harahap!</p>
-            <button class="btn" onclick="closePopup()">Mulai Menjelajah</button>
-        </div>
-    </div>
-    <script>
-        window.onload = function() {
-            document.getElementById('popup').style.display = 'flex';
-        };
-        function closePopup() {
-            let popup = document.getElementById('popup');
-            popup.style.opacity = '0';
-            popup.style.visibility = 'hidden';
-            setTimeout(() => popup.style.display = 'none', 300);
-        }
-    </script>
 </body>
 </html>
+        
+            
+       
+    
