@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -76,10 +76,14 @@
         </div>
     </div>
     <script>
+        window.onload = function() {
+            document.getElementById('popup').style.display = 'flex';
+        };
         function closePopup() {
             let popup = document.getElementById('popup');
             popup.style.opacity = '0';
             popup.style.visibility = 'hidden';
+            setTimeout(() => popup.style.display = 'none', 300);
         }
     </script>
 </body>
