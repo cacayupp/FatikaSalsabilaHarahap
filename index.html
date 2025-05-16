@@ -1,152 +1,141 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Perpustakaan Fatika</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      text-align: center;
-      background-color: #ff69b4;
-    }
-    nav ul li {
-      display: inline;
-      margin: 0;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: black;
-      padding: 15px 20px;
-      display: inline-block;
-    }
-    nav ul li a:hover {
-      background-color: #e7accf;
-    }
-    .dark-mode {
-      background-color: #1a1a1a;
-      color: white;
-    }
-    .dark-mode nav ul {
-      background-color: #333;
-    }
-    .dark-mode nav ul li a {
-      color: white;
-    }
-    .dark-mode nav ul li a:hover {
-      background-color: #555;
-    }
-    .toggle-btn {
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #ff69b4;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Fatika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        alert("Selamat datang teman - teman Perpustakaan Caca")
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e7accf;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #ff69b4;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 15px 20px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #e7accf;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            color: ##e7accf;
+        }
+        footer {
+            background-color: #e7accf;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-  <header class="text-center p-5 font-bold text-xl" style="background-color: #e7accf;">
-    <h1>Perpustakaan Fatika</h1>
-    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-        <li><a href="Buku.html">Koleksi</a></li>
-        <li><a href="perkalian.php">Perkalian</a></li>
-        <li><a href="form pengunjung.php">Formulir Pengunjung</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Perpustakaan Fatika</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="Buku.html">Koleksi</a></li>
+                <li><a href="perkalian.php">Perkalian</a></li>
+                <li><a href="form pengunjung.php">Formulir Pengunjung</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="p-6 text-center">
-    <h2 class="text-2xl font-bold">Hai selamat datang</h2>
-  </section>
+    <section id="home" class="p-6 text-center">
+        <h2 class="text-2xl font-bold">Hai selamat datang</h2>
+    </section>
 
-  <section class="p-6 text-center">
-    <h2 class="text-2xl font-bold">Tentang Saya</h2>
-    <p class="mt-2">Perkenalkan nama saya Fatika Salsabila Harahap, mahasiswa dari Universitas Sumatera Utara...</p>
-  </section>
+    <section id="about" class="p-6 bg-white text-center">
+        <h2 class="text-2xl font-bold">Tentang Saya</h2>
+        <p class="mt-2">Perkenalkan nama saya Fatika Salsabila Harahap, mahasiswa dari Universitas Sumatera Utara, jurusan program studi Perpustakaan dan Sains Informasi, ini adalah perpustakaan pribadi untuk menemukan berbagai koleksi buku digital. </p>
+    </section>
+    
+    <section id="contact" class="p-6 text-center">
+        <h2 class="text-2xl font-bold">Kerja Sama</h2>
+         <ul>
+             <a href="https://digilib.unsri.ac.id/" target="_blank">Perpustakaan Universitas Sriwijaya</a>
+         </ul>
+    </section>
 
-  <section class="p-6 text-center">
-    <h2 class="text-2xl font-bold">Kerja Sama</h2>
-    <a href="https://digilib.unsri.ac.id/" target="_blank">Perpustakaan Universitas Sriwijaya</a>
-  </section>
+    <!-- Event Perpustakaan Section -->
+    <section id="event" class="p-6 bg-pink-50 text-center">
+      <h2 class="text-2xl font-bold mb-6">Event Perpustakaan</h2>
 
-  <section id="event" class="p-6 bg-pink-50 text-center">
-    <h2 class="text-2xl font-bold mb-6">Event Perpustakaan</h2>
-    <!-- Event contoh, kamu bisa isi ulang -->
-    <div class="mb-10">
-      <h3 class="text-xl font-semibold">Diskusi Buku</h3>
-      <p>Diskusi buku perempuan & masyarakat patriarki.</p>
-    </div>
-  </section>
+      <!-- Event 1 -->
+      <div class="mb-10">
+        <h3 class="text-xl font-semibold">Diskusi Buku "Perempuan di Titik Nol"</h3>
+        <img src="https://images.unsplash.com/photo-1601933470928-c3b5b99c314e?auto=format&fit=crop&w=800&q=80" 
+             alt="Diskusi Buku" class="mx-auto my-4 rounded-lg shadow w-full max-w-md" />
+        <p class="mb-2">Diskusi buku karya Nawal El-Saadawi membahas peran perempuan dalam masyarakat patriarki.</p>
+        <a href="https://www.instagram.com/me7angkasa/reel/DAP3LMph2Hd/" target="_blank" class="text-blue-600 underline">Baca berita di Instagram</a>
+      </div>
 
-  <footer class="text-black text-center p-4 mt-6" style="background-color: #e7accf;">
-    <p>&copy; 2025 Fatika Salsabila Harahap. All Rights Reserved.</p>
-  </footer>
+      <!-- Event 2 -->
+      <div class="mb-10">
+        <h3 class="text-xl font-semibold">Workshop Perpustakaan Digital ITS</h3>
+        <img src="https://images.unsplash.com/photo-1581090700227-1e8eec34a9e9?auto=format&fit=crop&w=800&q=80" 
+             alt="Workshop Digital" class="mx-auto my-4 rounded-lg shadow w-full max-w-md" />
+        <p class="mb-2">Belajar strategi personal branding pustakawan di era digital bersama Perpustakaan ITS.</p>
+        <a href="https://www.its.ac.id/perpustakaan/2025/02/10/its-library-workshop-reveals-the-keys-to-successful-personal-branding-in-the-digital-era/" target="_blank" class="text-blue-600 underline">Baca berita resmi ITS</a>
+      </div>
 
-  <!-- COOKIE + DARK MODE SCRIPT -->
-  <script>
-    function setCookie(nama, nilai, hariKadaluarsa) {
-      const d = new Date();
-      d.setTime(d.getTime() + (hariKadaluarsa * 24 * 60 * 60 * 1000));
-      let expires = "expires=" + d.toUTCString();
-      document.cookie = nama + "=" + nilai + ";" + expires + ";path=/";
-    }
+      <!-- Event 3 -->
+      <div class="mb-10">
+        <h3 class="text-xl font-semibold">Storytelling Anak SDN Sukasari 4</h3>
+        <img src="https://images.unsplash.com/photo-1593697820396-360cf122d5d3?auto=format&fit=crop&w=800&q=80" 
+             alt="Storytelling" class="mx-auto my-4 rounded-lg shadow w-full max-w-md" />
+        <p class="mb-2">Kegiatan dongeng interaktif yang menyenangkan untuk meningkatkan minat baca anak-anak.</p>
+        <a href="https://dpad.tangerangkota.go.id/berita/dinas-perpustakaan-dan-arsip-daerah-kota-tangerang-menggelar-kegiatan-story-telling-di-sdn-sukasari-4-dengan-tema-membaca-adalah-petualangan-tanpa-batas" target="_blank" class="text-blue-600 underline">Baca berita lengkap</a>
+      </div>
 
-    function getCookie(nama) {
-      let name = nama + "=";
-      let decodedCookie = decodeURIComponent(document.cookie);
-      let ca = decodedCookie.split(';');
-      for (let i = 0; i < ca.length; i++) {
-        let c = ca[i].trim();
-        if (c.indexOf(name) === 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
+      <!-- Event 4 -->
+      <div class="mb-10">
+        <h3 class="text-xl font-semibold">Wisata Literasi Perpus Jakarta Utara</h3>
+        <img src="https://images.unsplash.com/photo-1606313562173-0c043b3444e2?auto=format&fit=crop&w=800&q=80" 
+             alt="Wisata Literasi" class="mx-auto my-4 rounded-lg shadow w-full max-w-md" />
+        <p class="mb-2">Mengenalkan dunia literasi dan perpustakaan kepada anak-anak usia dini melalui dongeng & tur.</p>
+        <a href="https://utara.jakarta.go.id/berita/wisata-literasi-perpustakaan-jakarta-utara-mengenalkan-dunia-perpustakaan-kepada-anak-anak-tkit-permata-al-maidah" target="_blank" class="text-blue-600 underline">Baca berita resmi Pemprov DKI</a>
+      </div>
+    </section>
 
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-      const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
-      setCookie("mode", mode, 7);
-    }
-
-    function cekCookie() {
-      let username = getCookie("username");
-      if (username !== "") {
-        alert("Selamat datang kembali, " + username + "!");
-      } else {
-        username = prompt("Halo! Siapa nama kamu?", "");
-        if (username) {
-          setCookie("username", username, 7);
-          alert("Selamat datang teman - teman Perpustakaan Caca");
-        }
-      }
-
-      // Terapkan mode gelap kalau cookie-nya ada
-      const mode = getCookie("mode");
-      if (mode === "dark") {
-        document.body.classList.add("dark-mode");
-      }
-    }
-
-    window.onload = cekCookie;
-  </script>
+    <footer class="#20B2AA; text-black text-center p-4 mt-6">
+        <p>&copy; 2025 Fatika Salsabila Harahap. All Rights Reserved.</p>
+    </footer> 
 </body>
 </html>
